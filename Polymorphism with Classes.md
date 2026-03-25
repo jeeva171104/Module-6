@@ -26,7 +26,38 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
+# Polymorphism example with Beans and Mango
 
+class Beans:
+    def type(self):
+        return "Vegetable"
+    
+    def color(self):
+        return "Green"
+
+
+class Mango:
+    def type(self):
+        return "Fruit"
+    
+    def color(self):
+        return "Yellow"
+
+
+# Generic function
+def identify(item):
+    print("Type:", item.type())
+    print("Color:", item.color())
+    print("-------------------")
+
+
+# Creating objects
+b = Beans()
+m = Mango()
+
+# Calling generic function (polymorphism)
+identify(b)
+identify(m)
 ## Output
 
 ## Result
